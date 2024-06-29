@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: #fffcfc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 70px;
+        }
+
+        h2 {
+            color: #fffcfc;
+            text-align: center;
+            font-size: 40px;
+             margin-top: 0px;
+        }
+
+        h2:before {
+            font-size: 40px;
+            content: "MOVIES";
+            animation: animate 4s infinite ease 1.5s;
+        }
+
+        span {
+            font-size: 100px;
+             
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: fire 6s infinite;
+            -webkit-backface-visibility: hidden;
+            background-image: url('https://cdn.pixabay.com/photo/2014/08/20/18/44/fireball-422746_640.jpg'); /* Removed extra space at the beginning */
+        }
+
+        @keyframes fire {
+            0% {
+                 font-size:200px;
+                background-position: 40% 100%;
+            }
+            
+            100% {
+                font-size:90px;
+                background-position: -40% -100%;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                content: "MOVIES";
+                opacity: 1;
+                 font-size: 10px;
+            }
+            
+            100% {
+                content: "SERIES";
+                opacity: 0.7;
+                font-size: 30px;
+              
+            }
+        }
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 980px) {
+            h1 {
+                font-size: 40px;
+            }
+            span {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 30px;
+            }
+            span {
+                font-size: 30px;
+               
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+         
+    </style>
+</head>
+<body>
+   
+    <h1><span>NETSHOW 
+        <br><span> REPRESENTS</span></h1>
+    <h2></h2>
+ 
+</body>
+</html>
